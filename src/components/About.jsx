@@ -1,34 +1,32 @@
 // src/components/About.js
 import React from "react";
 
-const About = ({ darkMode }) => {
+const About = () => {
   return (
     <section
       id="about"
-      className={`py-20 px-8 ${
-        darkMode ? "bg-gray-900 text-gray-300" : "bg-white text-gray-900"
-      } text-center`}
+      className="py-20 px-8 bg-white text-gray-900 text-center"
     >
-      <h3 className="text-3xl font-semibold mb-8">About Me</h3>
-      <div className="max-w-2xl mx-auto text-left">
-        <p className="mb-4">
-          I am a dedicated IT student with a passion for technology and
-          innovation. Currently pursuing my B.Tech in Information Technology at
-          PSNA College of Engineering and Technology, I have gained hands-on
-          experience in developing applications using various technologies. I
-          thrive on challenges and love to solve problems using code.
+      <h3 className="text-4xl font-extrabold mb-10 tracking-wide">About Me</h3>
+      <div className="max-w-3xl mx-auto text-left space-y-6">
+        <p className="text-lg leading-relaxed text-justify">
+          I am a dedicated B.Tech student specializing in Information Technology
+          at PSNA College of Engineering and Technology, Dindigul. With a solid
+          foundation in programming, I have developed a keen interest in
+          crafting efficient solutions using Java, Flutter, and ReactJS.
         </p>
-        <p className="mb-4">
-          I have worked on several projects, including a Bluetooth Attendance
-          System and a Blogging Website, where I have applied my skills in
-          real-world scenarios. My internship as a Full Stack Developer at
-          Phoenix Softech allowed me to further enhance my knowledge of both
-          frontend and backend technologies.
+        <p className="text-lg leading-relaxed text-justify">
+          My journey in technology has been enriched by hands-on experience in
+          both mobile and web application development. I thrive on challenges
+          and enjoy leveraging modern development tools to deliver impactful
+          solutions.
         </p>
-        <p>
-          Looking forward, I aim to contribute to innovative projects that make
-          a positive impact on society while continuing to learn and grow as a
-          developer.
+        <p className="text-lg leading-relaxed text-justify">
+          Currently, I am focused on full stack web development, creating
+          dynamic and scalable applications that ensure seamless user
+          experiences. I am committed to continuous learning and staying updated
+          on technological advancements to contribute effectively to innovative
+          projects in the tech industry.
         </p>
       </div>
     </section>

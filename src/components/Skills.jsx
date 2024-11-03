@@ -45,7 +45,7 @@ const Skills = ({ darkMode }) => {
         darkMode ? "bg-gray-900 text-gray-300" : "bg-gray-100 text-gray-900"
       } text-center`}
     >
-      <h3 className="text-2xl font-semibold mb-8">Skills</h3>
+      <h3 className="text-4xl font-extrabold mb-10 tracking-wide">Skills</h3>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {skills.map((skill, index) => (
           <div

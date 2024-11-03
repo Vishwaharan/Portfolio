@@ -8,19 +8,12 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
   return (
     <div
-      className={`min-h-screen w-full flex flex-col font-sans ${
-        darkMode ? "bg-gray-900 text-white" : "bg-gray-50 text-gray-900"
-      }`}
+      className={`min-h-screen w-full flex flex-col font-sans "bg-gray-50 text-gray-900"
+      `}
     >
-      <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+      <Header />
       <main className="flex-grow">
         <Hero />
         <About />
