@@ -1,4 +1,4 @@
-// src/components/Skills.js
+// src/components/Skills.jsx
 import React from "react";
 import { FaJava, FaReact, FaNodeJs } from "react-icons/fa";
 import {

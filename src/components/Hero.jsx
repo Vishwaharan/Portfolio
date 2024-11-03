@@ -1,4 +1,4 @@
-// src/components/Hero.js
+// src/components/Hero.jsx
 import React from "react";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import profileImg from "../assets/profile.png";

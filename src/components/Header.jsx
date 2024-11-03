@@ -1,4 +1,4 @@
-// src/components/Header.js
+// src/components/Header.jsx
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 

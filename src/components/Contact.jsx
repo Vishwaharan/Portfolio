@@ -1,4 +1,4 @@
-// src/components/Contact.js
+// src/components/Contact.jsx
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
