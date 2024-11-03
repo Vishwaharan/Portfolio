@@ -43,19 +43,19 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-20 px-8 bg-gray-100 text-gray-900 text-center"
+      className="py-20 px-8 md:px-8 bg-gray-100 text-gray-900 text-center"
     >
-      <h3 className="text-4xl font-extrabold mb-10 tracking-wide">
+      <h3 className="text-2xl md:text-4xl font-extrabold mb-8 tracking-wide">
         Contact Me
       </h3>
       <form
         onSubmit={handleSubmit}
-        className="max-w-lg mx-auto space-y-6 bg-white p-8 rounded-lg shadow-lg transition duration-300"
+        className="max-w-lg mx-auto space-y-6 bg-white p-6 rounded-lg shadow-lg transition duration-300"
       >
         <div>
           <label
             htmlFor="name"
-            className="block text-lg font-semibold mb-1 text-gray-700 text-left"
+            className="block text-base md:text-lg font-semibold mb-1 text-gray-700 text-left"
           >
             Name
           </label>
@@ -65,14 +65,14 @@ const Contact = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-blue-50 text-gray-900 border-gray-300"
+            className="w-full px-3 py-2 md:px-4 md:py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-blue-50 text-gray-900 border-gray-300"
             required
           />
         </div>
         <div>
           <label
             htmlFor="email"
-            className="block text-lg font-semibold mb-1 text-gray-700 text-left"
+            className="block text-base md:text-lg font-semibold mb-1 text-gray-700 text-left"
           >
             Email
           </label>
@@ -89,7 +89,7 @@ const Contact = () => {
         <div>
           <label
             htmlFor="message"
-            className="block text-lg font-semibold mb-1 text-gray-700 text-left"
+            className="block text-base md:text-lg font-semibold mb-1 text-gray-700 text-left"
           >
             Message
           </label>

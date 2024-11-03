@@ -26,12 +26,14 @@ const Projects = () => {
       id="projects"
       className="py-20 px-8 bg-white text-gray-900 text-center"
     >
-      <h3 className="text-4xl font-extrabold mb-10 tracking-wide">Projects</h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <h3 className="text-2xl md:text-4xl font-extrabold mb-10 tracking-wide">
+        Projects
+      </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 border border-gray-300 bg-gray-100 relative"
+            className="rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 border border-gray-300 bg-gray-100 relative mb-6" // Added mb-6 here
           >
             <img
               src={project.image}
@@ -40,7 +42,7 @@ const Projects = () => {
             />
             <div className="flex flex-col justify-between p-6 h-full">
               <div>
-                <h4 className="font-bold text-xl mb-2 text-gray-800">
+                <h4 className="font-bold text-lg md:text-xl mb-2 text-gray-800">
                   {project.name}
                 </h4>
                 <p className="mb-6 text-base text-gray-700">

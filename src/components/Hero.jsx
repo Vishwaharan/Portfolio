@@ -16,23 +16,23 @@ const Hero = () => {
           className="w-full h-full object-cover"
         />
       </div>
-      <h2 className="text-3xl md:text-5xl font-extrabold mb-2 text-gray-800">
+      <h2 className="text-2xl md:text-5xl font-extrabold mb-3 text-gray-800">
         Hello, I'm Vishwaharan M
       </h2>
-      <p className="text-xl max-w-md mb-4 text-gray-600 transition duration-300 transform hover:scale-105">
+      <p className="text-xl max-w-md mb-5 text-gray-600 transition duration-300 transform hover:scale-105">
         <span className="text-blue-500 font-bold">Passionate</span>{" "}
         <span className="text-blue-700 font-semibold">Developer</span>
       </p>
 
       {/* Social Media Links */}
-      <div className="flex space-x-6 mb-4">
+      <div className="flex space-x-6 mb-5">
         <a
           href="https://www.linkedin.com/in/vishwaharan02-m/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 hover:text-blue-800 transition duration-300"
         >
-          <FaLinkedin size={28} />
+          <FaLinkedin size={30} />
         </a>
         <a
           href="https://github.com/Vishwaharan"
@@ -40,21 +40,21 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="text-gray-800 hover:text-gray-600 transition duration-300"
         >
-          <FaGithub size={28} />
+          <FaGithub size={30} />
         </a>
         <a
           href="mailto:vishwaharan002@gmail.com"
           className="text-red-600 hover:text-red-800 transition duration-300"
         >
-          <FaEnvelope size={28} />
+          <FaEnvelope size={30} />
         </a>
       </div>
 
       <a
         href="https://drive.google.com/file/d/17oq43zh4MH2ksmnEAP4YZbqpuxbDUkkm/view?usp=drive_link"
-        className="px-10 py-4 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition duration-300 mb-4 text-lg font-semibold"
+        className="px-8 py-2 md:px-10 md:py-4 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-700 transition duration-300 mb-4 text-lg md:text-xl font-semibold"
       >
-        Download Resume
+        Resume
       </a>
     </section>
   );

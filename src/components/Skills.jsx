@@ -41,21 +41,25 @@ const Skills = ({ darkMode }) => {
   return (
     <section
       id="skills"
-      className={`py-20 px-8 ${
+      className={`py-20 px-4 md:px-8 ${
         darkMode ? "bg-gray-900 text-gray-300" : "bg-gray-100 text-gray-900"
       } text-center`}
     >
-      <h3 className="text-4xl font-extrabold mb-10 tracking-wide">Skills</h3>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <h3 className="text-2xl md:text-4xl font-extrabold mb-10 tracking-wide">
+        Skills
+      </h3>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className={`shadow-lg rounded-lg p-6 flex flex-col items-center justify-center transition-transform transform hover:scale-105 hover:shadow-xl ${
+            className={`shadow-lg rounded-lg p-4 md:p-6 flex flex-col items-center justify-center transition-transform transform hover:scale-105 hover:shadow-xl ${
               darkMode ? "bg-gray-800 text-gray-300" : "bg-white"
             }`}
           >
             {skill.icon}
-            <span className="mt-4 text-lg font-medium">{skill.name}</span>
+            <span className="mt-2 text-base md:text-lg font-medium">
+              {skill.name}
+            </span>
           </div>
         ))}
       </div>
