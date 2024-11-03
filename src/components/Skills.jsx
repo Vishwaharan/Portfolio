@@ -50,7 +50,7 @@ const Skills = ({ darkMode }) => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className={`shadow-lg rounded-lg p-6 flex flex-col items-center justify-center ${
+            className={`shadow-lg rounded-lg p-6 flex flex-col items-center justify-center transition-transform transform hover:scale-105 hover:shadow-xl ${
               darkMode ? "bg-gray-800 text-gray-300" : "bg-white"
             }`}
           >
