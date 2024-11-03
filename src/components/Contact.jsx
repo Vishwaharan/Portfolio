@@ -20,10 +20,10 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_x6cbo5o", // Replace with your EmailJS service ID
-        "template_hvmq0lc", // Replace with your EmailJS template ID
+        "service_x6cbo5o",
+        "template_hvmq0lc",
         formData,
-        "OrlO5k_t7MvvmDYJ2" // Replace with your EmailJS user ID
+        "OrlO5k_t7MvvmDYJ2"
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
@@ -55,7 +55,7 @@ const Contact = () => {
         <div>
           <label
             htmlFor="name"
-            className="block text-lg font-semibold mb-1 text-gray-700 text-left" // Increased font size and changed margin
+            className="block text-lg font-semibold mb-1 text-gray-700 text-left"
           >
             Name
           </label>
@@ -72,7 +72,7 @@ const Contact = () => {
         <div>
           <label
             htmlFor="email"
-            className="block text-lg font-semibold mb-1 text-gray-700 text-left" // Increased font size and changed margin
+            className="block text-lg font-semibold mb-1 text-gray-700 text-left"
           >
             Email
           </label>
@@ -89,7 +89,7 @@ const Contact = () => {
         <div>
           <label
             htmlFor="message"
-            className="block text-lg font-semibold mb-1 text-gray-700 text-left" // Increased font size and changed margin
+            className="block text-lg font-semibold mb-1 text-gray-700 text-left"
           >
             Message
           </label>
