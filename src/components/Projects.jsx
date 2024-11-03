@@ -1,3 +1,4 @@
+// src/components/Projects.jsx
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import bluetoothProj from "../assets/bluetooth.png";
@@ -35,7 +36,7 @@ const Projects = () => {
             <img
               src={project.image}
               alt={project.name}
-              className="h-60 w-full object-cover transition-opacity duration-300 hover:opacity-90"
+              className="h-56 w-full object-cover transition-opacity duration-300 hover:opacity-90"
             />
             <div className="flex flex-col justify-between p-6 h-full">
               <div>
