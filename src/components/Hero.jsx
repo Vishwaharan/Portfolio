@@ -16,7 +16,7 @@ const Hero = () => {
           className="w-full h-full object-cover"
         />
       </div>
-      <h2 className="text-5xl font-extrabold mb-2 text-gray-800">
+      <h2 className="text-3xl md:text-5xl font-extrabold mb-2 text-gray-800">
         Hello, I'm Vishwaharan M
       </h2>
       <p className="text-xl max-w-md mb-4 text-gray-600 transition duration-300 transform hover:scale-105">
