@@ -43,9 +43,9 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-20 px-8 md:px-8 bg-gray-100 text-gray-900 text-center"
+      className="py-20 px-8 md:px-8 bg-gradient-to-b from-gray-100 to-gray-200 text-gray-900 text-center"
     >
-      <h3 className="text-2xl md:text-4xl font-extrabold mb-8 tracking-wide">
+      <h3 className="text-2xl md:text-4xl font-extrabold mb-8 tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 hover:scale-105 transition-transform duration-300">
         Contact Me
       </h3>
       <form
@@ -105,10 +105,11 @@ const Contact = () => {
         </div>
         <button
           type="submit"
-          className="w-full py-3 font-semibold rounded-lg transition duration-300 bg-blue-600 text-white hover:bg-blue-700"
+          className="w-full py-3 font-semibold rounded-lg mb-8 tracking-wide text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:scale-105 transition-transform duration-300"
         >
           Send Message
         </button>
+
         {statusMessage && <p className="mt-4 text-center">{statusMessage}</p>}
       </form>
     </section>
