@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-20 px-4 md:px-8 bg-white text-gray-900 text-center"
+      className="py-20 px-4 md:px-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 text-center transition-colors duration-300"
     >
       <h3 className="text-2xl md:text-4xl font-extrabold mb-8 tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 hover:scale-105 transition-transform duration-300">
         About Me

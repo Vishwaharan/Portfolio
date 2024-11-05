@@ -1,4 +1,3 @@
-// src/components/Skills.jsx
 import React from "react";
 import { FaJava, FaReact, FaNodeJs } from "react-icons/fa";
 import {
@@ -70,17 +69,17 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-20 px-4 md:px-8 bg-gray-100 text-gray-900 text-center"
+      className="py-20 px-4 md:px-8 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-center transition-colors duration-300"
     >
       <h3 className="text-2xl md:text-4xl font-extrabold mb-8 tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 hover:scale-105 transition-transform duration-300">
         Skills
       </h3>
 
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-6">
+      <div className=" py-5 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-6">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="shadow-md rounded-lg p-3 md:p-5 flex flex-col items-center justify-center transition-transform transform hover:scale-105 hover:shadow-lg bg-white"
+            className="shadow-lg dark:shadow-xl dark:shadow-gray-800 rounded-lg p-4 md:p-5 flex flex-col items-center justify-center transition-transform transform hover:scale-105 hover:shadow-xl bg-white dark:bg-gray-900"
           >
             {skill.icon}
             <span className="mt-2 text-sm md:text-lg font-medium">

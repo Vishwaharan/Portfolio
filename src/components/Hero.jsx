@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center text-center min-h-screen w-full bg-gradient-to-b from-gray-300 to-gray-200 px-4"
+      className="flex flex-col items-center justify-center text-center min-h-screen w-full bg-gradient-to-b from-gray-300 to-gray-200 dark:from-gray-900 dark:to-gray-800 px-4 transition-colors duration-300"
     >
       <div className="w-48 h-48 overflow-hidden rounded-full mb-6 shadow-lg border-4 border-blue-400 transform transition-transform duration-300 hover:scale-110">
         <img
@@ -16,13 +16,15 @@ const Hero = () => {
           className="w-full h-full object-cover"
         />
       </div>
-      <h2 className="text-2xl md:text-5xl font-extrabold mb-3 text-gray-800 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700">
+      <h2 className="text-2xl md:text-5xl font-extrabold mb-3 text-gray-800 dark:text-gray-100 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700 dark:from-gray-100 dark:to-gray-400">
         Hello, I'm Vishwaharan M
       </h2>
 
-      <p className="text-xl max-w-md mb-5 text-gray-600 transition duration-300 transform hover:scale-105">
+      <p className="text-xl max-w-md mb-5 text-gray-600 dark:text-gray-300 transition duration-300 transform hover:scale-105">
         <span className="text-blue-500 font-bold">Passionate</span>{" "}
-        <span className="text-blue-700 font-semibold">Developer</span>
+        <span className="text-blue-700 dark:text-blue-400 font-semibold">
+          Developer
+        </span>
       </p>
 
       {/* Social Media Links */}
@@ -31,7 +33,7 @@ const Hero = () => {
           href="https://www.linkedin.com/in/vishwaharan02-m/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-600 hover:text-blue-800 transition duration-300"
+          className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition duration-300"
         >
           <FaLinkedin size={30} />
         </a>
@@ -39,13 +41,13 @@ const Hero = () => {
           href="https://github.com/Vishwaharan"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-800 hover:text-gray-600 transition duration-300"
+          className="text-gray-800 dark:text-gray-100 hover:text-gray-600 dark:hover:text-gray-400 transition duration-300"
         >
           <FaGithub size={30} />
         </a>
         <a
           href="mailto:vishwaharan002@gmail.com"
-          className="text-red-600 hover:text-red-800 transition duration-300"
+          className="text-red-600 dark:text-red-400 hover:text-red-800 dark:hover:text-red-300 transition duration-300"
         >
           <FaEnvelope size={30} />
         </a>
