@@ -44,9 +44,11 @@ const Contact = () => {
       id="contact"
       className="py-20 px-8 md:px-8 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-center transition-colors duration-300"
     >
-      <h3 className="text-2xl md:text-4xl font-extrabold mb-12  tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 hover:scale-105 transition-transform duration-300">
-        Contact Me
-      </h3>
+      <div className="overflow-hidden">
+        <h3 className="text-2xl md:text-4xl font-extrabold mb-8 tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 hover:scale-105 transition-transform duration-300">
+          Contact Me
+        </h3>
+      </div>
       <form
         onSubmit={handleSubmit}
         className="max-w-lg mx-auto space-y-6 bg-white dark:bg-gray-900 p-6 rounded-lg shadow-xl transition duration-300 border border-gray-300 dark:border-gray-600"
